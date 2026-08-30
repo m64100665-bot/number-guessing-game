@@ -48,5 +48,8 @@ class MyGame(App):
 
         return layout
 
+def start_game(self, instance):
+    print("بدأت اللعبة")
+
 
 MyGame().run()
