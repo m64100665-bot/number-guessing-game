@@ -1,3 +1,5 @@
+import random
+
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.label import Label
@@ -40,6 +42,7 @@ class MyGame(App):
             text="ابدأ اللعب",
             font_size=22
         )
+        start.bind(on_press=self.start_game)
 
         layout.add_widget(start)
 
